@@ -41,7 +41,7 @@
 
 1. Download Stage IV data from EOL archive via FTP order https://doi.org/10.5065/D6PG1QDD
 2. Extract all files that are not in .grb2 format (.Z or .gz format) and separate 01h, 06h, and 24h files into separate directories (conus only, when applicable)
-3. Run `01_stageiv_renaming.py` - Renames files to keep consistent naming convention and add grb2 extension where necessary (Note: Files before 20 July 2020 are technically GRIB1 format, but adding the grb2 extension does not impact the readability of the file.)
+3. Run `01_stageiv_renaming.py` -- Renames files to keep consistent naming convention and add grb2 extension where necessary (Note: Files before 20 July 2020 are technically GRIB1 format, but adding the grb2 extension does not impact the readability of the file.)
 4. Optional: Run `02_check_missing.py` and see exported csv files for times of missing Stage IV data files
 
 ### NOAA Atlas 14

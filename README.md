@@ -1,8 +1,10 @@
 # extreme_rainfall
   <p>
-    Detecting 12-hour extreme rainfall events from Stage IV data.
+    Detecting 12-hour extreme rainfall events from Stage IV data. Used to generate the database analyzed in Chiappa et al. (2024).
+    
   </p>
 </div>
+
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -10,9 +12,6 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -31,46 +30,21 @@
 </details>
 
 
+## Prerequisites
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+* At least 1 TB of storage space recommended
+* Python 3 installed with dependencies listed in code
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+## Part I: Data retrieval and prep
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+### Stage IV
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-### Built With
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+1. Download Stage IV data from EOL archive via FTP order https://doi.org/10.5065/D6PG1QDD
+2. Extract all files that are not in .grb2 format (.Z or .gz format) and separate 01h, 06h, and 24h files into separate directories (conus only, when applicable)
+3. Run "01_stageiv_renaming.py" - Renames files to keep consistent naming convention and add grb2 extension where necessary (Note: Files before 20 July 2020 are technically GRIB1 format, but adding the grb2 extension does not impact the readability of the file.)
+4. Optional: Run "02_check_missing.py" and see exported csv files for times of missing st4 data files![image](https://github.com/jchiappa/extreme_rainfall/assets/160286614/86ac8ddb-10bd-4294-8b00-230ba9d15acb)
 
 
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
 
 ### Installation
 

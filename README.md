@@ -1,14 +1,8 @@
 # extreme_rainfall
-
-<h3 align="center">extreme_rainfall</h3>
-
   <p align="center">
     Detecting 12-hour extreme rainfall events from Stage IV data.
-    <br />
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>

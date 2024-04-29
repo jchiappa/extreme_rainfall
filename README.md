@@ -12,6 +12,7 @@ Detecting 12-hour extreme rainfall events from Stage IV data. Used to generate t
 * At least 1 TB of storage space recommended
 * Python 3 installed with dependencies listed in code
 
+
 ## Part I: Data Retrieval and Prep
 
 ### Stage IV
@@ -34,14 +35,17 @@ Detecting 12-hour extreme rainfall events from Stage IV data. Used to generate t
 1. Download the latest IBTrACS data in csv format (`ibtracs.since1980.list.v04r00.csv`) from https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r00/access/csv/
 2. Place in main data directory
 
+
 ## Part II: Preliminary ERE Detection Algorithm
 
 Run `03_ere_preliminary_algorithm.py` after changing paths and variables in the code (will take several hours to run -- around 1 hour per year of data)
+
 
 ## Part III: Quality Control
 1. Run `04_qc1_params.py` to compute relevant quality control parameters for each preliminary event. Takes several minutes.
 2. Run `05_qc1.py` to create and apply QC conditions. Will be applied to entire dataset regardless of resuming.
 3. Run `06_qc2_combine_duplicates.py` to combine events with shared exceedance points occurring within 12 hours of each other. Also exports arrays with locations of all exceedance points for each event, updated 12-hr accumulation map arrays for combined events, and renumbers the event IDs. May take a few hours.
+
 
 ## Part IV: Additional Attributes and Auto-Classification
 1. Run `07_ari_thresholds.py` to pull higher-end ARI thresholds from the NOAA Atlas 14 dataset for each event at the point of max exceedance. Takes several minutes.
@@ -54,16 +58,7 @@ Run `03_ere_preliminary_algorithm.py` after changing paths and variables in the 
  
 Recommend backing up all exported csv files at this stage in case of accidental replacement/altering!
 
-<!-- USAGE EXAMPLES -->
-## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTACT -->
 ## Contact
 
 Jason Chiappa - [@twitter_handle](https://twitter.com/twitter_handle) - jchiappa@ou.edu

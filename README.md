@@ -44,6 +44,18 @@
 3. Run "01_stageiv_renaming.py" - Renames files to keep consistent naming convention and add grb2 extension where necessary (Note: Files before 20 July 2020 are technically GRIB1 format, but adding the grb2 extension does not impact the readability of the file.)
 4. Optional: Run "02_check_missing.py" and see exported csv files for times of missing st4 data files!(https://github.com/jchiappa/extreme_rainfall/assets/160286614/86ac8ddb-10bd-4294-8b00-230ba9d15acb)
 
+### NOAA Atlas 14
+
+1. Download NOAA_Atlas_14_CONUS.nc from https://hdsc.nws.noaa.gov/pub/hdsc/data/tx/
+2. Place in a designated folder(https://github.com/jchiappa/extreme_rainfall/assets/160286614/2ad03c4d-3d13-4437-958b-28ee952bea14)
+
+### States
+1. If not downloaded, get the ArcGIS states shapefiles (by jeff.elrod) from https://www.arcgis.com/home/item.html?id=66d95ce91afb48829a9fe9c3145c755d
+2. Extract and place folder in main data directory if not already there.(https://github.com/jchiappa/extreme_rainfall/assets/160286614/cf5f7cb9-49ad-4a76-971c-e1965991e52a)
+
+### Tropical Cyclones
+1. Download the latest IBTrACS data in csv format ("ibtracs.since1980.list.v04r00.csv") from https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r00/access/csv/
+2. Place in main data directory (https://github.com/jchiappa/extreme_rainfall/assets/160286614/a74664e9-84de-48ef-9525-4759f63784f6)
 
 
 ### Installation

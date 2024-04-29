@@ -1,5 +1,5 @@
 # extreme_rainfall
-  <p align="center">
+  <p>
     Detecting 12-hour extreme rainfall events from Stage IV data.
   </p>
 </div>

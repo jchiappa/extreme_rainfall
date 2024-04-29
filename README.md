@@ -56,12 +56,12 @@ Run `03_ere_preliminary_algorithm.py` after changing paths and variables in the 
 6. Run `12_final_dataset.py` to organize the data table and save as a csv to be used for analysis.
 7. Optional: Run `13_event_maps.py` to export image files with each event's 12-hr and peak 1-hr accumulation maps. Takes several hours, and requires a lot of RAM. Memory error likely if not splitting up. Run <2000 at a time and restart kernel before resuming.
  
-Recommend backing up all exported csv files at this stage in case of accidental replacement/altering!
+Recommend backing up all exported csv files in case of accidental replacement/altering!
 
 
 ## Contact
 
-Jason Chiappa - [@twitter_handle](https://twitter.com/twitter_handle) - jchiappa@ou.edu
+Jason Chiappa - jchiappa@ou.edu
 
 Please contact me if you have questions or would like any code used to perform analysis on the database.
 

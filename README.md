@@ -1,8 +1,6 @@
 # extreme_rainfall
   <p>
-Detecting 12-hour extreme rainfall events from Stage IV data. Used to generate the database analyzed in Chiappa et al. (2024).
-
-[currently under review]
+Detecting 12-hour extreme rainfall events from Stage IV data. Used to generate the database analyzed in Chiappa et al. (2024). [Currently under review in Geophysical Research Letters]
 
   </p>
 </div>

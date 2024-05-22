@@ -2,7 +2,7 @@
   <p>
 Detecting 12-hour extreme rainfall events from Stage IV data. Used to generate the database analyzed in Chiappa et al. (2024).
 
-[insert reference]
+Chiappa, J. (2023). A 20-Year Survey of Short-Duration Extreme Rainfall Events from Summertime Convection Over the Central and Eastern United States: Climatology, Trends, and Meteorological Patterns (Master’s Thesis). The University of Oklahoma, Norman, OK. URL https://hdl.handle.net/11244/340067
 
   </p>
 </div>

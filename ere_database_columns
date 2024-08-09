@@ -1,0 +1,28 @@
+From supporting information of Chiappa et al. (2024)
+
+Column name specifications for ere_database csv file:
+event – event object identification number.
+lat – (°N) latitude of the point of maximum exceedance (PME).
+lon – (°E) longitude of the PME.
+event_time – (yyyymmddhh) date and hour of the peak hourly accumulation at the event’s PME.
+start_time – (yyyymmddhh) date and hour of the first hour during the 12-hour accumulation period over which ≥1 mm of Stage IV precipitation was recorded at the PME.
+end_time – (yyyymmddhh) date and time of the end of the 12-hour period over which the event occurred at the PME.
+exceedance – (mm) total 12-hour precipitation exceeding the 10-year ARI threshold at the PME.
+accumulation – (mm) total 12-hour precipitation at the PME.
+exceed_pts – total number of grid points on the 4-km Stage IV grid exceeding the 10-year ARI threshold during the event.
+exceed_vol – (mm) total exceedance volume for the event, calculated as the sum of all 12-hour accumulation exceedance above the 10-yr ARI threshold from all exceedance points in the event.
+exceed_length – (km) major axis length of the contiguous cluster of exceedance points containing the PME. (0 if only one exceedance point in cluster)
+max_1hr – (mm) peak 1-hour accumulation at the PME through the 12-hour accumulation period.
+max_pflength – (km) maximum major axis length of the 1 mm hr-1 precipitation feature (PF) nearest to the PME through the accumulation period.
+pflength_duration – (hours) maximum number of consecutive hours where the major axis length of the 1 mm hr-1 PF containing the PME was at least 200 km through the accumulation period.
+ari10 – (mm) 10-year ARI 12-hour precipitation frequency threshold at the PME (according to NOAA Atlas 14 data interpolated onto the Stage IV grid).
+ari25 – (mm) 25-year ARI 12-hour precipitation frequency threshold at the PME.
+ari50 – (mm) 50-year ARI 12-hour precipitation frequency threshold at the PME.
+ari100 – (mm) 100-year ARI 12-hour precipitation frequency threshold at the PME.
+ari500 – (mm) 500-year ARI 12-hour precipitation frequency threshold at the PME.
+ari1000 – (mm) 1000-year ARI 12-hour precipitation frequency threshold at the PME.
+tc_flag – flag for events associated with tropical cyclones according to conditions in Text S2 
+(0 = not tropical cyclone, 1 = tropical cyclone)
+iso_flag – flag for events associated with isolated convection according to the conditions in Text S2 (0 = widespread, 1 = isolated)
+mcs_flag – flag for events associated with mesoscale convective systems (MCSs) or synoptic-scale features according to the conditions in Text S2 (0 = non-MCS/synoptic, 1 = MCS/synoptic)
+noct_flag – flag for events classified as nocturnal according to the conditions in Text S2 (0 = diurnal, 1 = nocturnal)

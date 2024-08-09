@@ -413,7 +413,7 @@ def cross_check_24():
     global tp24sum
     # if same times as previous iteration, keep previous accumulation, else create new
     if not np.array_equal(times24,times24_old):
-        # new precip array (from 6hr data)
+        # new precip array (from 24hr data)
         tp48 = np.empty((len(times24), lat.shape[0], lat.shape[1]))
         # fill array with data and sum
         for idx,time24 in enumerate(times24):
@@ -423,7 +423,7 @@ def cross_check_24():
             f = 'st4_conus.'+tstr+'.24h.grb2'
             # make sure data is not missing
             if os.path.exists(path24+f):
-                # open data and get 6h precip array
+                # open data and get 24h precip array
                 ds = xr.open_dataset(path24+f)
                 if 'tp' in list(ds.variables):
                     tp24 =  ds.tp.data
@@ -453,7 +453,7 @@ def cross_check_24():
 # In[19]:
 
 
-# CAREFUL: WILL REPACE PREVIOUS DATA. INITIALIZATION ONLY! (make sure resume = True if resuming)
+# CAUTION: WILL REPLACE PREVIOUS DATA. INITIALIZATION ONLY! (make sure resume = True if resuming)
 if not resume:
     # list of times with max hourly total (in max gridpoint) per event
     event_time = []
@@ -625,7 +625,7 @@ for starttime,endtime in zip(monthstarttimes,monthendtimes):
         # subtract threshold map
         exceed = accum-atlas
 
-        # if any points exceeding threshold
+        # if any points exceed threshold
         if np.nanmax(exceed) > 0:
             # pull out points exceeding threshold
             extreme_mask = exceed>0

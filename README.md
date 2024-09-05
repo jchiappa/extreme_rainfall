@@ -2,7 +2,7 @@
   <p>
 Detecting 12-hour extreme rainfall events from Stage IV data. Used to generate the database analyzed in Chiappa et al. (2024).
 
-Chiappa, J., Parsons, D. B., Furtado, J. C., & Shapiro, A. (2024). Short-duration extreme rainfall events in the central and eastern United States during the summer: 2003–2023 trends and variability. Geophysical Research Letters, 51, e2024GL110424. https://doi.org/10.1029/2024GL110424
+Chiappa, J., Parsons, D. B., Furtado, J. C., & Shapiro, A. (2024). Short-duration extreme rainfall events in the central and eastern United States during the summer: 2003–2023 trends and variability. _Geophysical Research Letters_, 51, e2024GL110424. https://doi.org/10.1029/2024GL110424
 
   </p>
 </div>

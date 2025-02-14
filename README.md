@@ -2,7 +2,7 @@
   <p>
 Detecting 12-hour extreme rainfall events from Stage IV data. Used to generate the database analyzed in Chiappa et al. (2024).
 
-_Note: A bug has been discovered in this version where some concurrent events may not be counted. This issue will be fixed and a new version will be released by February 2025._
+_Note: A new and improved version of this software is now available as of February 2025. If you wish to use this software for research purposes, please contact the author at jasonchiappa2498@gmail.com. A bug was discovered in the original version where some concurrent events were counted. This issue does not significantly impact the results of the published work, but the total area of several events should be larger than previously reported._
 
 Reference:
 
@@ -65,7 +65,7 @@ Recommend backing up all exported csv files in case of accidental replacement/al
 
 ## Contact
 
-Jason Chiappa - jchiappa@ou.edu
+Jason Chiappa - jasonchiappa2498@gmail.com
 
 Please contact me if you have questions or would like any code used to perform analysis on the database.
 

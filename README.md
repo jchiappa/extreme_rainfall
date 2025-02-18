@@ -2,7 +2,7 @@
   <p>
   <div style="text-align: left">
 Detecting 12-hour extreme rainfall events from Stage IV data (new and improved 2025 version).
-Refer to 2024 version (first release source code) or the Zenodo repository ([![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13286368.svg)](https://doi.org/10.5281/zenodo.13286368)) for the code used to generate the database analyzed in Chiappa et al. (2024).
+Refer to 2024 version (first release source code) or the Zenodo repository (https://doi.org/10.5281/zenodo.13286368) for the code used to generate the database analyzed in Chiappa et al. (2024).
 
 
 **_Note: A bug was been discovered in the 2024 version that caused some exceedance points to not be counted. This version uses an improved approach that is more streamlined and is far less likely to miss any points of exceedance. This is accomplished through a "merging" method instead of a replacement method when detecting simulataneous events within the specified distance threshold._**

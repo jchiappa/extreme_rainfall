@@ -1,15 +1,16 @@
 # extreme_rainfall_v2025
   <p>
   <div style="text-align: left">
-Detecting 12-hour extreme rainfall events from Stage IV data (new and improved 2025 version).
-Refer to 2024 version (first release source code) or the Zenodo repository (https://doi.org/10.5281/zenodo.13286368) for the code used to generate the database analyzed in Chiappa et al. (2024).
+Detecting 12-hour extreme rainfall events from Stage IV data (new and improved 2025 version).  
+  
+Refer to 2024 version (first release source code) or the Zenodo repository (https://doi.org/10.5281/zenodo.13286368) for the code used to generate the database analyzed in Chiappa et al. (2024).  
+  
+**Release Notes:**  
+A bug was discovered in the 2024 version that caused some exceedance points to not be counted. This version uses an improved approach that is more streamlined and is far less likely to miss any points of exceedance. This is accomplished through a "merging" method instead of a replacement method when detecting simulataneous events within the specified distance threshold.  
 
-
-**_Note: A bug was been discovered in the 2024 version that caused some exceedance points to not be counted. This version uses an improved approach that is more streamlined and is far less likely to miss any points of exceedance. This is accomplished through a "merging" method instead of a replacement method when detecting simulataneous events within the specified distance threshold._**
-
-_Main difference in results from 2024 version: Average annual event count over the domain went from ~67% of what is expected based on NOAA Atlas 14 thresholds to ~85%, meaning Stage IV data is better at detecting EREs than previously thought. Annual event counts are similar, but number of exceedance points and total exceedance volume is larger. Variability and trend results presented in Chiappa et al. (2024) do not change significantly._
-
-Reference:
+Main difference in results from 2024 version: Average annual event count over the domain went from ~67% of what is expected based on NOAA Atlas 14 thresholds to ~85%, meaning Stage IV data is better at detecting EREs than previously thought. Annual event counts are similar, but number of exceedance points and total exceedance volume is larger. Variability and trend results presented in Chiappa et al. (2024) do not change significantly.  
+  
+**Reference:**  
 Chiappa, J., Parsons, D. B., Furtado, J. C., & Shapiro, A. (2024). Short-duration extreme rainfall events in the central and eastern United States during the summer: 2003–2023 trends and variability. _Geophysical Research Letters_, 51, e2024GL110424. https://doi.org/10.1029/2024GL110424
 
   </p>

@@ -1,0 +1,12 @@
+Event maps (labeled at the top left and file name by their event ID in the database) display the MAXIMUM 12-hour 
+Quantitative Precipitation Estimates (QPEs) within the displayed time range in the title.
+
+For example: a map labeled with a start time of 2022-07-03 12:00:00 and end time of 2022-07-04 13:00:00 would 
+display the maximum of all 12-hour accumulation values starting with the period of 2022-07-03 12 UTC - 2022-07-04 00 UTC
+and ending with the period of 2022-07-04 01 UTC - 2022-07-04 13 UTC, therefore only including two 12-hour periods, but
+with summed hourly QPEs over all hours in the specified period.
+
+The color scale ranges from 0 mm to the 10-year ARI threshold at the point of maximum exceedance (PME).
+All grid points exceeding the 10-year ARI threshold at that location are marked by small red circles and the
+PME is marked by a small white circle.
+The threshold used to separate simultaneous event objects is presented as a range ring around the PME.

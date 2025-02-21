@@ -54,7 +54,7 @@ Run `03_ere_database.py` after changing paths and variables in the code (will ta
 
 ## Part III: Quality Control
 1. Run `04_qc_params.py` to compute relevant quality control parameters for each preliminary event. Takes several minutes.
-2. Run `05_qc.py` to create and apply QC conditions. Will be applied to entire dataset regardless of resuming.
+2. Run `05_qc.py` to create and apply QC conditions. Will be applied to entire dataset regardless of resuming. Currently uses QC methods described in Chiappa et al. (2024) supporting information.
 
 ## Part IV: Additional Attributes and Auto-Classification
 1. Run `06_exceedance_attrs.py` to calculate attributes on the exceedance arrays. Takes several minutes.
